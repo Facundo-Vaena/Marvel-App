@@ -9,6 +9,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Comics from './Comics';
 import apiParams from '../config';
+import styles from '../styles';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,7 +53,7 @@ export default function Detail({ route }) {
                 }}>
                 {() =>
                 (isLoading
-                    ? <ActivityIndicator size="large" color="#00ff00" />
+                    ? <ActivityIndicator size="large" color="#00ff00" style={styles.spinner} />
                     : <Information
                         image={`${data?.thumbnail?.path}.${data.thumbnail.extension}`}
                         name={data.name}

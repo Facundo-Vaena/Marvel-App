@@ -24,9 +24,8 @@ export default function Home() {
             }
         })
             .then(response => {
-                console.log(response.data.data.results);
                 setData(response.data.data.results)})
-            .catch(error => console.error('ERROR'. error))
+            .catch(error => console.error('ERROR', error))
             .finally(() => setLoading(false));
     }, [reload]);
 
@@ -55,7 +54,7 @@ export default function Home() {
         style={styles.home}
         >
             {isLoading
-                ? <ActivityIndicator size="large" color="#00ff00" />
+                ? <ActivityIndicator size="large" color="#00ff00" style={styles.spinner} />
                 : (<>
                     <Searchbar
                         // placeholder="Search for character..."

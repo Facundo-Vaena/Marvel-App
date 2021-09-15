@@ -4,6 +4,9 @@ import { StyleSheet } from "react-native";
 const backgroundImg = 'https://i.pinimg.com/474x/92/5e/cd/925ecd8d83538b0119c9e672e8e1c90b.jpg'
 
 const styles = StyleSheet.create({
+  spinner: {
+    marginTop: '30%',
+  },
   cardContainer: {
     backgroundColor: '#ff0000',
     paddingTop: 2,
@@ -48,7 +51,7 @@ const styles = StyleSheet.create({
     backgroundImage: `url(${backgroundImg})`,
   },
   infoImg: {
-    backgroundColor: '#ff0000',
+    // backgroundColor: '#ff0000',
     padding:30,
     // flex:1,
     width: '65%',
@@ -63,6 +66,12 @@ const styles = StyleSheet.create({
     // backgroundColor: '#0000009a',
         
   },
+  noDescription: {
+    backgroundColor:'#f7af1585',
+    color:'white',
+    textAlign:'center',
+    marginTop:'20%',
+  },
   textDescription: {
     flex:1,
     backgroundColor: '#00000085',
@@ -71,7 +80,11 @@ const styles = StyleSheet.create({
     color:'white',
     textAlign:'center',
     marginLeft:'2%',
+    marginTop:'3%',
     width:'95%',
+//     font-family: ccbiffbamboom, sans-serif;
+// font-style: normal;
+// font-weight: 400;
   },
   comics: {
     flex:1,
@@ -105,6 +118,18 @@ const styles = StyleSheet.create({
     marginTop:'5%',
     textAlign:'center',
     marginBottom:'5%',
+    marginLeft:'3%',
+    marginRight:'3%',
+  },
+  pruebaFont: {
+    // fontFamily:'ccbiffbamboom sans-serif',
+    // fontFamily:'comic-serif-pro',
+    // fontFamily:'Comic Sans MS',
+    // fontFamily:'badaboom pro sans serif',
+    // fontFamily:'Cochin',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    color:'white',
   },
 })
 

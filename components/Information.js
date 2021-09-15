@@ -15,7 +15,8 @@ export default function Information({ image, name, description }) {
             </View>
             <View style={styles.textDescription}>
                 <Text style={styles.infoText}>{name}</Text>
-                <Text style={styles.infoText}>{description ? description : 'No description yet' }</Text>
+                <Text style={description ? styles.infoText : styles.noDescription}>{description ? description : 'No description yet' }</Text>
+                {/* <Text style={description ? styles.pruebaFont : styles.pruebaFont}>{description ? description : 'No description yet' }</Text> */}
             </View>
         </View>)
 }

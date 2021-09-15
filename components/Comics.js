@@ -30,14 +30,14 @@ export default function Comics({ listComics }) {
             .finally(() => setLoading(false));
 
     }, []);
-
+//color="#00ff00"
     return (
         <View 
         style={styles.comics}
         >
             {
                 isLoading
-                    ? <ActivityIndicator size="large" color="#00ff00" />
+                    ? <ActivityIndicator size="large" color="#00ff00" style={styles.spinner} />
                     : <FlatList
                     contentContainerStyle={{alignItems:'center'}}
                     data={data}
