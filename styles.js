@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 // const backgroundImg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-6BknJv6k9YsPf1y6K--1l9zxArOepTZNS15TqUy0x_Gm5H6pKOa4_Exbirfg98T03Y&usqp=CAU'
 // const backgroundImg = 'https://i.pinimg.com/originals/18/53/cf/1853cf856c7b98c794eb1d67a75e4120.jpg' Este esta bueno
 const backgroundImg = 'https://i.pinimg.com/474x/92/5e/cd/925ecd8d83538b0119c9e672e8e1c90b.jpg'
+const scndBackgroundImg = 'https://wallpaperaccess.com/full/1833085.jpg';
 
 const styles = StyleSheet.create({
   spinner: {
@@ -48,7 +49,8 @@ const styles = StyleSheet.create({
     display:'flex',
     flex:1,
     justifyContent:'center',
-    backgroundImage: `url(${backgroundImg})`,
+    // backgroundImage: `url(${backgroundImg})`,
+    backgroundImage: `url(${scndBackgroundImg})`,
   },
   infoImg: {
     // backgroundColor: '#ff0000',
@@ -88,14 +90,15 @@ const styles = StyleSheet.create({
   },
   comics: {
     flex:1,
-    backgroundImage: `url(${backgroundImg})`,
-
+    // backgroundImage: `url(${backgroundImg})`,
+    backgroundImage:`url(${scndBackgroundImg})`,
   },
   comicContainer: {
     backgroundColor: '#0000009a',
     width:190,
     height:260,
     margin:10,
+    borderRadius:'3%',
     display:'flex',
     flexDirection:'column',
     justifyContent:'center',
